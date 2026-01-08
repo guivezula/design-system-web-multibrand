@@ -1,0 +1,56 @@
+{
+  "curve": {
+    "comfortable": {
+      "entrance": {
+        "value": "cubic-bezier(0.5, 0.1, 0.25, 1)",
+        "attributes": { "category": "motion", "type": "curves" }
+      },
+      "exit": {
+        "value": "cubic-bezier(0.62, 0.05, 0.32, 1)",
+        "attributes": { "category": "motion", "type": "curves" }
+      }
+    },
+    "expressive": {
+      "entrance": {
+        "value": "cubic-bezier(0.75, 0.25, 0, 1)",
+        "attributes": { "category": "motion", "type": "curves" }
+      },
+      "exit": {
+        "value": "cubic-bezier(0.63, 0.85, 0, 1)",
+        "attributes": { "category": "motion", "type": "curves" }
+      }
+    }
+  },
+  "duration": {
+    "fast": {
+      "01": {
+        "value": "100ms",
+        "attributes": { "category": "motion", "type": "duration" }
+      },
+      "02": {
+        "value": "160ms",
+        "attributes": { "category": "motion", "type": "duration" }
+      }
+    },
+    "moderate": {
+      "01": {
+        "value": "240ms",
+        "attributes": { "category": "motion", "type": "duration" }
+      },
+      "02": {
+        "value": "320ms",
+        "attributes": { "category": "motion", "type": "duration" }
+      }
+    },
+    "slow": {
+      "01": {
+        "value": "400ms",
+        "attributes": { "category": "motion", "type": "duration" }
+      },
+      "02": {
+        "value": "600ms",
+        "attributes": { "category": "motion", "type": "duration" }
+      }
+    }
+  }
+}

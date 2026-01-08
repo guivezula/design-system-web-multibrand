@@ -1,0 +1,52 @@
+{
+  "negative": {
+    "bg": {
+      "color": {
+        "value": "{color.red.600}",
+        "attributes": { "category": "alias", "type": "negative" }
+      }
+    },
+    "border": {
+      "color": {
+        "value": "{color.red.400}",
+        "attributes": { "category": "alias", "type": "negative" }
+      }
+    },
+    "label": {
+      "color": {
+        "value": "{color.red.400}",
+        "attributes": { "category": "alias", "type": "negative" }
+      }
+    },
+    "placeholder": {
+      "color": {
+        "value": "{color.red.400}",
+        "attributes": { "category": "alias", "type": "negative" }
+      }
+    },
+    "support-text": {
+      "color": {
+        "value": "{color.red.400}",
+        "attributes": { "category": "alias", "type": "negative" }
+      }
+    },
+    "heading": {
+      "color": {
+        "value": "{color.red.400}",
+        "attributes": { "category": "alias", "type": "negative" }
+      }
+    },
+    "paragraph": {
+      "color": {
+        "value": "{color.red.400}",
+        "attributes": { "category": "alias", "type": "negative" }
+      }
+    },
+    "description": {
+      "color": {
+        "value": "{color.red.400}",
+        "attributes": { "category": "alias", "type": "negative" }
+      }
+    }
+  }
+}

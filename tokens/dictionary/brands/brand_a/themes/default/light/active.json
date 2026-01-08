@@ -1,0 +1,34 @@
+{
+  "active": {
+    "bg": {
+      "color": {
+        "value": "{color.grey.200}",
+        "attributes": { "category": "alias", "type": "active" }
+      }
+    },
+    "border": {
+      "color": {
+        "value": "{color.grey.900}",
+        "attributes": { "category": "alias", "type": "active" }
+      }
+    },
+    "icon": {
+      "color": {
+        "value": "{color.grey.900}",
+        "attributes": { "category": "alias", "type": "active" }
+      }
+    },
+    "label": {
+      "color": {
+        "value": "{color.grey.900}",
+        "attributes": { "category": "alias", "type": "active" }
+      }
+    },
+    "placeholder": {
+      "color": {
+        "value": "{color.grey.900}",
+        "attributes": { "category": "alias", "type": "active" }
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "disabled": {
+    "bg": {
+      "color": {
+        "value": "{color.grey.600}",
+        "attributes": { "category": "alias", "type": "disabled" }
+      }
+    },
+    "border": {
+      "color": {
+        "value": "{color.grey.500}",
+        "attributes": { "category": "alias", "type": "disabled" }
+      }
+    },
+    "label": {
+      "color": {
+        "value": "{color.grey.0}",
+        "attributes": { "category": "alias", "type": "disabled" }
+      }
+    },
+    "placeholder": {
+      "color": {
+        "value": "{color.grey.0}",
+        "attributes": { "category": "alias", "type": "disabled" }
+      }
+    },
+    "support-text": {
+      "color": {
+        "value": "{color.grey.0}",
+        "attributes": { "category": "alias", "type": "disabled" }
+      }
+    },
+    "opacity": {
+      "value": "{opacity.low}",
+      "attributes": { "category": "alias", "type": "disabled" }
+    },
+    "description": {
+      "color": {
+        "value": "{color.grey.0}",
+        "attributes": { "category": "alias", "type": "disabled" }
+      }
+    }
+  }
+}

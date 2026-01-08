@@ -1,0 +1,40 @@
+{
+  "text": {
+    "heading": {
+      "color": {
+        "value": "{color.grey.0}",
+        "attributes": { "category": "alias", "type": "text-color" }
+      }
+    },
+    "paragraph": {
+      "color": {
+        "value": "{color.grey.200}",
+        "attributes": { "category": "alias", "type": "text-color" }
+      }
+    },
+    "description": {
+      "color": {
+        "value": "{color.grey.200}",
+        "attributes": { "category": "alias", "type": "text-color" }
+      }
+    },
+    "label": {
+      "color": {
+        "value": "{color.grey.0}",
+        "attributes": { "category": "alias", "type": "text-color" }
+      }
+    },
+    "placeholder": {
+      "color": {
+        "value": "{color.grey.200}",
+        "attributes": { "category": "alias", "type": "text-color" }
+      }
+    },
+    "support-text": {
+      "color": {
+        "value": "{color.grey.0}",
+        "attributes": { "category": "alias", "type": "text-color" }
+      }
+    }
+  }
+}

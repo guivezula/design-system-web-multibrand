@@ -1,0 +1,120 @@
+{
+  "_label": {
+    "lg": {
+      "3": {
+        "font": {
+          "value": "normal normal {font.weight.bold} {font.size.sm}/{line.height.default} {font.family.b}",
+          "attributes": { "category": "alias", "type": "text-styles" }
+        },
+        "letter-spacing": {
+          "value": "{letter.spacing.default}",
+          "attributes": { "category": "alias", "type": "text-styles" }
+        }
+      },
+      "2": {
+        "font": {
+          "value": "normal normal {font.weight.semibold} {font.size.sm}/{line.height.default} {font.family.b}",
+          "attributes": { "category": "alias", "type": "text-styles" }
+        },
+        "letter-spacing": {
+          "value": "{letter.spacing.default}",
+          "attributes": { "category": "alias", "type": "text-styles" }
+        }
+      },
+      "1": {
+        "font": {
+          "value": "normal normal {font.weight.regular} {font.size.sm}/{line.height.default} {font.family.b}",
+          "attributes": { "category": "alias", "type": "text-styles" }
+        },
+        "letter-spacing": {
+          "value": "{letter.spacing.default}",
+          "attributes": { "category": "alias", "type": "text-styles" }
+        }
+      }
+    },
+    "md": {
+      "3": {
+        "font": {
+          "value": "normal normal {font.weight.bold} {font.size.xs}/{line.height.default} {font.family.b}",
+          "attributes": { "category": "alias", "type": "text-styles" }
+        },
+        "letter-spacing": {
+          "value": "{letter.spacing.default}",
+          "attributes": { "category": "alias", "type": "text-styles" }
+        }
+      },
+      "2": {
+        "font": {
+          "value": "normal normal {font.weight.semibold} {font.size.xs}/{line.height.default} {font.family.b}",
+          "attributes": { "category": "alias", "type": "text-styles" }
+        },
+        "letter-spacing": {
+          "value": "{letter.spacing.default}",
+          "attributes": { "category": "alias", "type": "text-styles" }
+        }
+      },
+      "1": {
+        "font": {
+          "value": "normal normal {font.weight.regular} {font.size.xs}/{line.height.default} {font.family.b}",
+          "attributes": { "category": "alias", "type": "text-styles" }
+        },
+        "letter-spacing": {
+          "value": "{letter.spacing.default}",
+          "attributes": { "category": "alias", "type": "text-styles" }
+        }
+      }
+    },
+    "sm": {
+      "3": {
+        "font": {
+          "value": "normal normal {font.weight.bold} {font.size.2xs}/{line.height.default} {font.family.b}",
+          "attributes": { "category": "alias", "type": "text-styles" }
+        },
+        "letter-spacing": {
+          "value": "{letter.spacing.default}",
+          "attributes": { "category": "alias", "type": "text-styles" }
+        }
+      },
+      "2": {
+        "font": {
+          "value": "normal normal {font.weight.semibold} {font.size.2xs}/{line.height.default} {font.family.b}",
+          "attributes": { "category": "alias", "type": "text-styles" }
+        },
+        "letter-spacing": {
+          "value": "{letter.spacing.default}",
+          "attributes": { "category": "alias", "type": "text-styles" }
+        }
+      },
+      "1": {
+        "font": {
+          "value": "normal normal {font.weight.regular} {font.size.2xs}/{line.height.default} {font.family.b}",
+          "attributes": { "category": "alias", "type": "text-styles" }
+        },
+        "letter-spacing": {
+          "value": "{letter.spacing.default}",
+          "attributes": { "category": "alias", "type": "text-styles" }
+        }
+      }
+    }
+  },
+  "_placeholder": {
+    "font": {
+      "value": "normal normal {font.weight.regular} {font.size.xs}/{line.height.default} {font.family.b}",
+      "attributes": { "category": "alias", "type": "text-styles" }
+    },
+    "letter-spacing": {
+      "value": "{letter.spacing.default}",
+      "attributes": { "category": "alias", "type": "text-styles" }
+    }
+  },
+  "_support-text": {
+    "font": {
+      "value": "normal normal {font.weight.regular} {font.size.2xs}/{line.height.xs} {font.family.b}",
+      "attributes": { "category": "alias", "type": "text-styles" }
+    },
+    "letter-spacing": {
+      "value": "{letter.spacing.default}",
+      "attributes": { "category": "alias", "type": "text-styles" }
+    }
+  }
+}

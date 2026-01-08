@@ -1,0 +1,8 @@
+{
+  "hover": {
+    "container": {
+      "value": "{opacity.super-high}",
+      "attributes": { "category": "alias", "type": "hover" }
+    }
+  }
+}

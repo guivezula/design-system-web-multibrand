@@ -1,0 +1,87 @@
+{
+  "_label": {
+    "lg": {
+      "3": {
+        "value": {
+          "font": "var(--_label-lg-3-font)",
+          "letter-spacing": "var(--_label-lg-3-letter-spacing)"
+        },
+        "attributes": { "category": "alias", "type": "mixin-text-styles" }
+      },
+      "2": {
+        "value": {
+          "font": "var(--_label-lg-2-font)",
+          "letter-spacing": "var(--_label-lg-2-letter-spacing)"
+        },
+        "attributes": { "category": "alias", "type": "mixin-text-styles" }
+      },
+      "1": {
+        "value": {
+          "font": "var(--_label-lg-1-font)",
+          "letter-spacing": "var(--_label-lg-1-letter-spacing)"
+        },
+        "attributes": { "category": "alias", "type": "mixin-text-styles" }
+      }
+    },
+    "md": {
+      "3": {
+        "value": {
+          "font": "var(--_label-md-3-font)",
+          "letter-spacing": "var(--_label-md-3-letter-spacing)"
+        },
+        "attributes": { "category": "alias", "type": "mixin-text-styles" }
+      },
+      "2": {
+        "value": {
+          "font": "var(--_label-md-2-font)",
+          "letter-spacing": "var(--_label-md-2-letter-spacing)"
+        },
+        "attributes": { "category": "alias", "type": "mixin-text-styles" }
+      },
+      "1": {
+        "value": {
+          "font": "var(--_label-md-1-font)",
+          "letter-spacing": "var(--_label-md-1-letter-spacing)"
+        },
+        "attributes": { "category": "alias", "type": "mixin-text-styles" }
+      }
+    },
+    "sm": {
+      "3": {
+        "value": {
+          "font": "var(--_label-sm-3-font)",
+          "letter-spacing": "var(--_label-sm-3-letter-spacing)"
+        },
+        "attributes": { "category": "alias", "type": "mixin-text-styles" }
+      },
+      "2": {
+        "value": {
+          "font": "var(--_label-sm-2-font)",
+          "letter-spacing": "var(--_label-sm-2-letter-spacing)"
+        },
+        "attributes": { "category": "alias", "type": "mixin-text-styles" }
+      },
+      "1": {
+        "value": {
+          "font": "var(--_label-sm-1-font)",
+          "letter-spacing": "var(--_label-sm-1-letter-spacing)"
+        },
+        "attributes": { "category": "alias", "type": "mixin-text-styles" }
+      }
+    }
+  },
+  "_placeholder": {
+    "value": {
+      "font": "var(--_placeholder-font)",
+      "letter-spacing": "var(--_placeholder-letter-spacing)"
+    },
+    "attributes": { "category": "alias", "type": "mixin-text-styles" }
+  },
+  "_support-text": {
+    "value": {
+      "font": "var(--_support-text-font)",
+      "letter-spacing": "var(--_support-text-letter-spacing)"
+    },
+    "attributes": { "category": "alias", "type": "mixin-text-styles" }
+  }
+}

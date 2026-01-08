@@ -1,0 +1,6 @@
+{
+  "_focus-outline": {
+    "value": "{color.purple.400} solid {default.border.width}",
+    "attributes": { "category": "alias", "type": "focus" }
+  }
+}

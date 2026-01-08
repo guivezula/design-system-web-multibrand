@@ -1,0 +1,14 @@
+{
+  "default": {
+    "border": {
+      "radius": {
+        "value": "{border.radius.md}",
+        "attributes": { "category": "alias", "type": "border" }
+      },
+      "width": {
+        "value": "{border.width.sm}",
+        "attributes": { "category": "alias", "type": "border" }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "font-family": {
+    "brand": {
+      "value": "{font.family.a}",
+      "attributes": {
+          "category": "alias",
+          "type": "font-family"
+      }
+    }
+  }
+}

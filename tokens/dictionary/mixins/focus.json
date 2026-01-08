@@ -1,0 +1,8 @@
+{
+  "_focus": {
+    "value": {
+      "outline": "var(--_focus-outline)"
+    },
+    "attributes": { "category": "alias", "type": "mixin-focus" }
+  }
+}
