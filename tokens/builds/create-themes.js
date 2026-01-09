@@ -21,7 +21,7 @@ const getPlatforms = (brand, theme, mode) => {
       options: {
         showFileHeader: false,
       },
-      buildPath: "tokens/styles/",
+      buildPath: "tokens/dist/",
       transforms: ["parseNameToKebab", "keepCSSValues"],
       files: [
         createThemeFileObj(

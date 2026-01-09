@@ -1,6 +1,6 @@
 
-import BrandADefaultTheme from "../../tokens/styles/brands/brand_a/themes/default/index.css?inline";
-import BrandBDefaultTheme from "../../tokens/styles/brands/brand_b/themes/default/index.css?inline";
+import BrandADefaultTheme from "../../tokens/dist/brands/brand_a/themes/default/index.css?inline";
+import BrandBDefaultTheme from "../../tokens/dist/brands/brand_b/themes/default/index.css?inline";
 
 const allThemes = {
   brand_a_default: BrandADefaultTheme,

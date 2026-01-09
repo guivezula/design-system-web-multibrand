@@ -1,5 +1,5 @@
 {
-  "_focus": {
+  "focus": {
     "value": {
       "outline": "var(--_focus-outline)"
     },

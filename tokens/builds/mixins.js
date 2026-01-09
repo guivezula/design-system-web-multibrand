@@ -12,11 +12,10 @@ const dictionary = StyleDictionary.extend({
       options: {
         showFileHeader: false,
       },
-      buildPath: "tokens/styles/",
+      buildPath: "tokens/dist/",
       transforms: ["parseNameToKebab", "keepCSSValues"],
       files: [
         createThemeMixinFileObj("focus", "focus"),
-        createThemeMixinFileObj("hover", "hover"),
         createThemeMixinFileObj("text-styles"),
         createIndexFileObj("mixins", "scss"),
       ],

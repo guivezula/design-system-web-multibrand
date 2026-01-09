@@ -1,5 +1,5 @@
 {
-  "_label": {
+  "label": {
     "lg": {
       "3": {
         "value": {
@@ -70,14 +70,14 @@
       }
     }
   },
-  "_placeholder": {
+  "placeholder": {
     "value": {
       "font": "var(--_placeholder-font)",
       "letter-spacing": "var(--_placeholder-letter-spacing)"
     },
     "attributes": { "category": "alias", "type": "mixin-text-styles" }
   },
-  "_support-text": {
+  "support-text": {
     "value": {
       "font": "var(--_support-text-font)",
       "letter-spacing": "var(--_support-text-letter-spacing)"

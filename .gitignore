@@ -11,7 +11,7 @@ node_modules
 dist
 dist-ssr
 *.local
-tokens/styles
+tokens/dist
 tokens/dictionary/globals/colors-rgb.json
 
 # Editor directories and files

@@ -26,7 +26,7 @@ const createFolderIndexes = (brands) => {
       const theme = brand.themes[themeKey];
       const baseDir = path.join(
         "tokens",
-        "styles",
+        "dist",
         "brands",
         brandKey,
         "themes",

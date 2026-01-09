@@ -19,8 +19,7 @@ const config: StorybookConfig = {
       css: {
         preprocessorOptions: {
           scss: {
-            additionalData: `@import "../../tokens/styles/mixins/index.scss";`,
-            quietDeps: true,
+            additionalData: `@use "../../tokens/dist/mixins/index.scss" as *;`,
           },
         },
       },

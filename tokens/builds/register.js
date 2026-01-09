@@ -136,9 +136,11 @@ export default (StyleDictionary) => {
 
   StyleDictionary.registerFormat({
     name: "createIndex",
-    formatter: (dictionary, file, config) => {
+    formatter: (_, file, config) => {
       const { files } = file;
       const { options } = config;
+      const isScss = options.format === "scss";
+      const importKeyword = isScss ? "@forward" : "@import";
 
       const filesString = files
         .map((file) => {
@@ -158,7 +160,7 @@ export default (StyleDictionary) => {
               matchDestination + optionsDestination.length
             );
 
-            return `@import "${fileToImport}";`;
+            return `${importKeyword} "${fileToImport}";`;
           }
         })
         .filter((file) => file)
