@@ -16,6 +16,7 @@ const dictionary = StyleDictionary.extend({
       transforms: ["parseNameToKebab", "keepCSSValues"],
       files: [
         createThemeMixinFileObj("focus", "focus"),
+        createThemeMixinFileObj("hover", "hover"),
         createThemeMixinFileObj("text-styles"),
         createIndexFileObj("mixins", "scss"),
       ],

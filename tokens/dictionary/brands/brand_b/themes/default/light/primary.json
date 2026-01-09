@@ -2,19 +2,25 @@
   "primary": {
     "bg": {
       "color": {
-        "value": "{color.blue.0}",
+        "value": "{color.blue.600}",
         "attributes": { "category": "alias", "type": "primary" }
       }
     },
     "border": {
       "color": {
-        "value": "{color.blue.300}",
+        "value": "{color.blue.700}",
         "attributes": { "category": "alias", "type": "primary" }
       }
     },
     "label": {
       "color": {
         "value": "{color.blue.900}",
+        "attributes": { "category": "alias", "type": "primary" }
+      }
+    },
+    "content": {
+      "color": {
+        "value": "{color.blue.0}",
         "attributes": { "category": "alias", "type": "primary" }
       }
     },

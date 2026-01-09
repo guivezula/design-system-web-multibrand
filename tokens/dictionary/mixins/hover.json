@@ -1,0 +1,9 @@
+{
+  "hover": {
+    "value": {
+      "background-color": "{color.grey.300}",
+      "opacity": "var(--hover-container)"
+    },
+    "attributes": { "category": "alias", "type": "mixin-hover" }
+  }
+}

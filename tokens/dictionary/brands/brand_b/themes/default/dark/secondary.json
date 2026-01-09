@@ -2,7 +2,7 @@
   "secondary": {
     "bg": {
       "color": {
-        "value": "{color.grey.50}",
+        "value": "{color.grey.400}",
         "attributes": { "category": "alias", "type": "secondary" }
       }
     },
@@ -16,6 +16,12 @@
       "color": {
         "value": "{color.grey.200}",
         "attributes": { "category": "alias", "type": "secondary" }
+      }
+    },
+    "content": {
+      "color": {
+        "value": "{color.grey.900}",
+        "attributes": { "category": "alias", "type": "primary" }
       }
     },
     "placeholder": {

@@ -12,7 +12,7 @@
         "attributes": { "category": "alias", "type": "active" }
       }
     },
-    "icon": {
+    "content": {
       "color": {
         "value": "{color.grey.0}",
         "attributes": { "category": "alias", "type": "active" }

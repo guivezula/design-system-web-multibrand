@@ -18,6 +18,12 @@
         "attributes": { "category": "alias", "type": "disabled" }
       }
     },
+    "content": {
+      "color": {
+        "value": "{color.grey.0}",
+        "attributes": { "category": "alias", "type": "primary" }
+      }
+    },
     "placeholder": {
       "color": {
         "value": "{color.grey.0}",
