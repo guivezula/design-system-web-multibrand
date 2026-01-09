@@ -1,0 +1,116 @@
+import {Canvas, Meta, Controls, Subtitle, Source} from "@storybook/addon-docs/blocks";
+import * as Button from "./button.stories";
+
+<Meta of={Button} />
+
+# Button
+
+<Subtitle>ds-button</Subtitle>
+
+<Canvas />
+
+## Estrutura do componente
+
+O componente `ds-button` é um componente de ação que pode ser utilizado para disparar eventos ou submeter formulários.
+Ele suporta diferentes variantes, tamanhos e estados, como desabilitado e carregando.
+
+### Exemplos de uso
+
+- Variantes: O componente possui atualmente duas variantes: `primary` e `secondary`.
+
+<Source
+    dark
+    language={"jsx"}
+    format
+    code={`
+<ds-button variant="primary">Primary Button</ds-button>
+<ds-button variant="secondary">Secondary Button</ds-button>
+    `}
+/>
+
+- Tamanhos: O componente suporta dois tamanhos: `sm` e `lg`.
+
+<Source
+    dark
+    language={"jsx"}
+    format
+    code={`
+<ds-button size="sm">Small Button</ds-button>
+<ds-button size="lg">Large Button</ds-button>
+    `}
+/>
+
+- Estados: O componente pode ser desabilitado `disabled` ou estar em estado de carregamento `loading`.
+
+<Source
+    dark
+    language={"jsx"}
+    format
+    code={`
+<ds-button disabled>Disabled Button</ds-button>
+<ds-button loading></ds-button>
+    `}
+/>
+
+- Acessibilidade: Quando o botão está em estado de carregamento, o atributo `aria-label` pode ser adicionado.
+
+<Source
+    dark
+    language={"jsx"}
+    format
+    code={`
+<ds-button loading aria-label="Carregando"></ds-button>
+    `}
+/>
+
+## Propriedades
+
+<Controls sort="alpha" />
+
+## Observações
+
+- O componente `ds-button` é construído utilizando Web Components e Lit, garantindo compatibilidade com diversos frameworks.
+- Ele emite um evento customizado `ds-click` quando clicado, permitindo a integração com outras partes da aplicação.
+- O componente é estilizado de forma consistente com o design system, garantindo uma aparência uniforme em toda a aplicação.
+- O estado de carregamento desabilita a interação do usuário e pode ser acompanhado por um indicador visual.
+
+## Importante
+- Certifique-se de fornecer um `aria-label` apropriado quando o botão estiver em estado de carregamento para melhorar a acessibilidade.
+- O componente `ds-button` pode ser utilizado dentro de formulários HTML, suportando a submissão padrão quando o atributo `type` é definido como `submit`.
+
+## Eventos de Web Components no React
+
+Ao usar Web Components em aplicações React, é importante saber que eventos customizados (`CustomEvent`) não funcionam como props. O React só escuta eventos do seu sistema interno (ex: `onClick`). Por isso, callbacks como `onDsClick` **não são capturados automaticamente**.
+
+### Exemplo
+
+- Não funciona
+
+<Source
+    language={"tsx"}
+    format
+    code={`
+<ds-button onDsClick={() => console.log('click')} />
+    `}
+/>
+
+- Funciona
+```tsx
+import { useEffect, useRef } from 'react';
+
+export function Example() {
+  const ref = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+
+    const handler = () => console.log('evento capturado');
+    el.addEventListener('ds-click', handler);
+
+    return () => el.removeEventListener('ds-click', handler);
+  }, []);
+
+  return <ds-button ref={ref}>Salvar</ds-button>;
+}
+```
