@@ -1,0 +1,44 @@
+:root {
+  display: inline-flex;
+}
+.ds-loading {
+  align-items: center;
+  display: flex;
+  gap: var(--spacing-1x);
+  justify-content: center;
+  position: relative;
+
+  &__dot {
+    animation: loading var(--duration-slow-02) infinite alternate;
+    background-color: var(--color-grey-50);
+    border-radius: var(--border-radius-circular);
+    height: var(--size-1x);
+    width: var(--size-1x);
+
+    &:nth-child(1) {
+      animation-delay: 0s;
+    }
+
+    &:nth-child(2) {
+      animation-delay: calc(var(--duration-moderate-01) * 1);
+    }
+
+    &:nth-child(3) {
+      animation-delay: calc(var(--duration-moderate-01) * 2);
+    }
+  }
+}
+
+@keyframes loading {
+  0% {
+    background-color: var(--color-grey-50);
+  }
+
+  50% {
+    background-color: var(--color-grey-100);
+  }
+
+  100% {
+    background-color: var(--color-grey-500);
+  }
+}
