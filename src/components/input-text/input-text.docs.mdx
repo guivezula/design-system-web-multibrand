@@ -1,0 +1,87 @@
+import {Canvas, Meta, Controls, Subtitle, Source} from "@storybook/addon-docs/blocks";
+import * as InputText from "./input-text.stories";
+
+<Meta of={InputText} />
+
+# Input Text
+
+<Subtitle>ds-input-text</Subtitle>
+
+<Canvas />
+
+## Estrutura do componente
+
+O componente `ds-input-text` é um campo de texto controlado que pode ser usado para entrada de dados em formulários ou interfaces.
+Ele suporta estados como `disabled`, `error` e aceita `label`, `placeholder` e `support-text` para orientar o usuário.
+
+### Exemplos de uso
+
+- Estados: O componente pode ser desabilitado `disabled` ou estar em estado de erro `error`.
+
+<Source
+    dark
+    language={"jsx"}
+    format
+    code={`
+<ds-input-text disabled label="E-mail" placeholder="seu@email.com"></ds-input-text>
+<ds-input-text error label="E-mail" support-text="E-mail inválido"></ds-input-text>
+                `}
+/>
+
+- Outro exemplo agora com valor inicial preenchido:
+
+<Source
+    dark
+    language={"jsx"}
+    format
+    code={`
+<ds-input-text value="Fulano de Tal" label="Nome"></ds-input-text>
+                `}
+/>
+
+## Propriedades
+
+<Controls sort="alpha" />
+
+### Uso em frameworks (React)
+
+Eventos customizados de Web Components não são conectados automaticamente às props do React (ex.: `onDsInput`). Para capturar os eventos, adicione listeners diretamente ao elemento DOM.
+
+<Source
+    language={"tsx"}
+    format
+    code={`
+import { useEffect, useRef } from 'react';
+
+export function Example() {
+  const ref = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+
+    const handler = (ev: Event) => console.log('evento capturado', ev);
+    el.addEventListener('ds-input', handler as EventListener);
+
+    return () => el.removeEventListener('ds-input', handler as EventListener);
+  }, []);
+
+  return <ds-input-text ref={ref}> </ds-input-text>;
+}
+    `}
+/>
+
+## Acessibilidade
+
+- Forneça `id` quando necessário para associação com labels externas.
+- Use `support-text` para mensagens de erro e instrução; combine com outros recursos quando integrar com formulários complexos.
+
+## Observações
+
+- O componente é construído como Web Component com Lit, garantindo compatibilidade com diversos frameworks.
+- Estados como `disabled` e `error` influenciam a experiência e devem ser usados conforme a validação do formulário.
+
+## Importante
+
+- Ao usar em aplicações React, capture eventos customizados via `addEventListener` (veja exemplo acima).
+- Sempre forneça texto de suporte ou `aria-label` apropriado quando o campo for crítico para acessibilidade.
