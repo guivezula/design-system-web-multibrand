@@ -20,7 +20,7 @@
     },
     "content": {
       "color": {
-        "value": "{color.grey.900}",
+        "value": "{color.grey.50}",
         "attributes": { "category": "alias", "type": "primary" }
       }
     },
