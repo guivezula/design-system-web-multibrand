@@ -1,5 +1,5 @@
 import { html, LitElement, unsafeCSS } from "lit";
-import { customElement, property, state } from "lit/decorators.js";
+import { customElement, property } from "lit/decorators.js";
 
 import { BaseButton } from "../../mixins";
 import { cn } from "../../utils/class-names";
@@ -19,9 +19,7 @@ export default class Button extends BaseButton(LitElement) {
   @property({ type: String }) variant: ButtonVariants["variant"] = "primary";
   @property({ type: String }) override ariaLabel: string | null = null;
   @property({ type: String }) override type: string = "button";
-  @property({ type: String}) override role: string | null = null;
-
-  @state() child!: Element | null;
+  @property({ type: String }) override role: string | null = null;
 
   static override readonly styles = [unsafeCSS(style)];
 
@@ -34,7 +32,13 @@ export default class Button extends BaseButton(LitElement) {
   }
 
   protected override componentClassMap(): unknown {
-    return cn(buttonVariants({ size: this.size, variant: this.variant, loading: this.loading }));
+    return cn(
+      buttonVariants({
+        size: this.size,
+        variant: this.variant,
+        loading: this.loading,
+      })
+    );
   }
 
   shouldFormSubmit(event: Event): void {
