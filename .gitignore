@@ -13,7 +13,6 @@ dist
 dist-ssr
 *.local
 tokens/dist
-tokens/dictionary/globals/colors-rgb.json
 coverage
 
 # Editor directories and files

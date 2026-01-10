@@ -9,8 +9,7 @@
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "preprocess:colors-rgb": "node tokens/dictionary/colors-rgb-preprocessor.mjs",
-    "build:tokens": "npm run preprocess:colors-rgb && node tokens/builds/index.js",
+    "build:tokens": "node tokens/builds/index.js",
     "test": "vitest",
     "test:watch": "vitest --watch",
     "test:coverage": "vitest --coverage"

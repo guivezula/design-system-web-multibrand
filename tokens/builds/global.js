@@ -13,7 +13,6 @@ const dictionary = StyleDictionary.extend({
       transforms: ["parseNameToKebab", "keepCSSValues"],
       files: [
         createGlobalFileObj("colors"),
-        createGlobalFileObj("colors-rgb"),
         createGlobalFileObj("shape"),
         createGlobalFileObj("typography"),
         createGlobalFileObj("motion"),

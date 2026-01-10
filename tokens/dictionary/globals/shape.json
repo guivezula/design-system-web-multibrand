@@ -83,24 +83,6 @@
       "attributes": { "category": "shape", "type": "opacity" }
     }
   },
-  "shadow": {
-    "none": {
-      "value": "0 0 0 0 0",
-      "attributes": { "category": "shape", "type": "shadows" }
-    },
-    "level-1": {
-      "value": "0px 4px 16px -2px rgb({color.grey.700-rgb} / {opacity.super-low})",
-      "attributes": { "category": "shape", "type": "shadows" }
-    },
-    "level-2": {
-      "value": "0px 12px 24px -6px rgb({color.grey.700-rgb} / {opacity.super-low})",
-      "attributes": { "category": "shape", "type": "shadows" }
-    },
-    "level-3": {
-      "value": "0px 16px 32px 0px rgb({color.grey.700-rgb} / {opacity.super-low})",
-      "attributes": { "category": "shape", "type": "shadows" }
-    }
-  },
   "spacing": {
     "none": {
       "value": "0px",
