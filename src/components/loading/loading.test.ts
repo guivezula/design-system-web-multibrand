@@ -10,7 +10,7 @@ describe('Loading', () => {
     expect(el).to.exist;
   });
 
-  it('should component match the snapshot', async () => {
+  it("should match Shadow DOM structure", async () => {
     const el = await fixture<Loading>(html`<ds-loading></ds-loading>`);
     await el.updateComplete;
 
