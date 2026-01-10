@@ -41,14 +41,6 @@ export default class Button extends BaseButton(LitElement) {
     );
   }
 
-  shouldFormSubmit(event: Event): void {
-    super.shouldFormSubmit(event);
-  }
-
-  handleClick(event: Event): void {
-    super.handleClick(event);
-  }
-
   override render() {
     return this.componentTemplate(this.componentContent());
   }
