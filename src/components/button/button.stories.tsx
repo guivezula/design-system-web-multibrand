@@ -159,3 +159,17 @@ export const Secondary: Story = {
     dsClick: fn(),
   },
 };
+
+export const Disabled: Story = {
+  args: {
+    ...Primary.args,
+    disabled: true,
+  },
+};
+
+export const Loading: Story = {
+  args: {
+    ...Primary.args,
+    loading: true,
+  },
+};
