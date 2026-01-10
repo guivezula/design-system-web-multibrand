@@ -1,4 +1,4 @@
-import type { BaseInputProps } from "./base-input.types";
+import type { BaseInputProps } from "../base-input/base-input.types";
 
 export declare class BaseInputTextProps extends BaseInputProps {
   protected label: string;
