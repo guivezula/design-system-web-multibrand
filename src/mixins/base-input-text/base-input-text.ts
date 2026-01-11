@@ -19,8 +19,8 @@ export const BaseInputText = <T extends Constructor<LitElement>>(
 
     protected wrapperTemplate(content?: unknown) {
       return html` <div
-        data-testid=${this.componentTestId("__wrapper")}
-        class="${this.componentClassMap("__wrapper")}"
+        data-testid=${this.componentTestId("wrapper")}
+        class="${this.componentClassMap("wrapper")}"
         data-expanded=${this.value?.length > 0 || this.isFocused}
       >
         ${content}
@@ -29,8 +29,8 @@ export const BaseInputText = <T extends Constructor<LitElement>>(
 
     protected labelTemplate(content?: unknown) {
       return html` <label
-        data-testid=${this.componentTestId("__label")}
-        class="${this.componentClassMap("__label")}"
+        data-testid=${this.componentTestId("label")}
+        class="${this.componentClassMap("label")}"
         for=${this.id}
         >${content}</label
       >`;
@@ -39,8 +39,8 @@ export const BaseInputText = <T extends Constructor<LitElement>>(
     protected supportTextTemplate(content?: unknown) {
       return html` <div
         id=${`${this.id}-support-text`}
-        data-testid=${this.componentTestId("__support-text")}
-        class="${this.componentClassMap("__support-text")}"
+        data-testid=${this.componentTestId("support-text")}
+        class="${this.componentClassMap("support-text")}"
         aria-live="polite"
       >
         ${content}
@@ -59,8 +59,8 @@ export const BaseInputText = <T extends Constructor<LitElement>>(
     protected inputTemplate() {
       return html` <input
         type="text"
-        data-testid=${this.componentTestId("__input")}
-        class="${this.componentClassMap("__input")}"
+        data-testid=${this.componentTestId("input")}
+        class="${this.componentClassMap("input")}"
         .value=${this.value}
         id=${this.id}
         ?disabled=${this.disabled}

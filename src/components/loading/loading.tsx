@@ -12,8 +12,8 @@ const COMPONENT_NAME = "ds-loading";
 export default class Loading extends BaseLoading(LitElement) {
   static override readonly styles = [unsafeCSS(style)];
 
-  protected override componentClassMap(subClass?: string): unknown {
-    return cn(`${COMPONENT_NAME}${subClass ?? ""}`);
+  protected override componentClassMap(subClass?: unknown): unknown {
+    return cn(`${COMPONENT_NAME}${subClass ? `__${String(subClass)}` : ""}`);
   }
 
   override render() {

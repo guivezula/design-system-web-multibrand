@@ -23,7 +23,7 @@ export default class InputText extends BaseInputText(LitElement) {
 
   protected override componentClassMap(subClass?: unknown): unknown {
     if (subClass) {
-      return `${COMPONENT_NAME}${subClass}`;
+      return cn(`${COMPONENT_NAME}__${String(subClass)}`);
     }
 
     return cn(
@@ -35,7 +35,7 @@ export default class InputText extends BaseInputText(LitElement) {
   }
 
   protected componentTestId(subClass?: unknown): unknown {
-    return `${COMPONENT_NAME}${subClass ? String(subClass) : ""}`;
+    return `${COMPONENT_NAME}${subClass ? `__${String(subClass)}` : ""}`;
   }
 
   protected override componentTemplate(): unknown {

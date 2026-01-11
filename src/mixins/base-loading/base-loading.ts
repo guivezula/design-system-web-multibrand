@@ -14,7 +14,7 @@ export const BaseLoading = <T extends Constructor<LitElement>>(
     protected dotTemplate(content?: unknown): unknown {
       return html`<span
         aria-hidden="true"
-        class=${this.componentClassMap("__dot")}
+        class=${this.componentClassMap("dot")}
       >
         ${content}
       </span>`;
