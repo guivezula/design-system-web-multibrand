@@ -2,17 +2,28 @@
 
 Repositório que implementa um Design System baseado em Web Components (Lit) e organizado para suportar múltiplas marcas e temas.
 
-## Instalação mínima
+## Instalação e execução
 
-1. Instale Node.js (recomendado v20+ / nvm para gerenciar versões)
-2. Instale dependências:
+1. Clone o repositório:
+
+```bash
+git clone git@github.com:guivezula/design-system-web-multibrand.git
+cd design-system-web-multibrand
+```
+2. Instale o Node.js (versão recomendada: 20.x ou superior). Caso tenha o nvm instalado, pode usar:
+
+```bash
+nvm install 20
+nvm use 20
+```
+
+3. Instale dependências:
 
 ```bash
 npm install
 ```
 
-Comandos úteis:
-
+4. Execute os scripts disponíveis:
 ```bash
 npm run storybook    # rodar Storybook (docs/preview)
 npm run test         # rodar testes
@@ -23,7 +34,7 @@ npm run test         # rodar testes
 - Web Components (Lit)
 - Storybook (docs e exemplos)
 - TypeScript
-- Vitest (testes)
+- Vitest e Open WC Testing (testes unitários)
 - Sass / CSS modules para estilos
 - Style Dictionary (tokens de design)
 
