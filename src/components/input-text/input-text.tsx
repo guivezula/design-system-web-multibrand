@@ -1,16 +1,15 @@
-import { html, LitElement, unsafeCSS } from "lit";
+import { html, unsafeCSS } from "lit";
 import { customElement, property } from "lit/decorators.js";
 
-import { BaseInputText } from "../../mixins";
-import { cn } from "../../utils/class-names";
+import { cn } from "@utils/class-names";
 import style from "./input-text.scss?inline";
-import type { InputTextProps } from "./input-text.types";
+import { InputTextMixin, type InputTextProps } from "./input-text.types";
 import { inputTextVariants } from "./input-text.variants";
 
 const COMPONENT_NAME = "ds-input-text";
 
 @customElement(COMPONENT_NAME)
-export default class InputText extends BaseInputText(LitElement) {
+export default class InputText extends InputTextMixin {
   @property({ type: Boolean }) override disabled: boolean = false;
   @property({ type: String }) override id: string = "";
   @property({ type: String }) override value: string = "";
@@ -30,7 +29,7 @@ export default class InputText extends BaseInputText(LitElement) {
       inputTextVariants({
         disabled: this.disabled,
         error: this.error,
-      })
+      }),
     );
   }
 
@@ -40,9 +39,9 @@ export default class InputText extends BaseInputText(LitElement) {
 
   protected override componentTemplate(): unknown {
     return super.componentTemplate(html`
-      ${this.wrapperTemplate(
-        html` ${this.labelTemplate(this.label)} ${this.inputTemplate()} `
-      )}
+      ${this.wrapperTemplate(html`
+        ${this.labelTemplate(this.label)} ${this.inputTemplate()}
+      `)}
       ${this.supportTextTemplate(this.supportText)}
     `);
   }
@@ -53,14 +52,13 @@ export default class InputText extends BaseInputText(LitElement) {
 }
 
 declare global {
-  const DS_INPUT_TEXT = "ds-input-text";
   interface HTMLElementTagNameMap {
-    [DS_INPUT_TEXT]: InputText;
+    "ds-input-text": InputText;
   }
 
   namespace React.JSX {
     interface IntrinsicElements {
-      [DS_INPUT_TEXT]: React.DetailedHTMLProps<
+      "ds-input-text": React.DetailedHTMLProps<
         React.HTMLAttributes<HTMLDivElement>,
         HTMLDivElement
       > &

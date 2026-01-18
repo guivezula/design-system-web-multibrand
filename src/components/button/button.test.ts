@@ -1,6 +1,6 @@
 import { expect, fixture, html, oneEvent } from "@open-wc/testing";
+import getSlotContent from "@utils/test/get-slot-content";
 import { describe, it, vi, expect as viExpect } from "vitest";
-import getSlotContent from "../../utils/test/get-slot-content";
 import Button from "./button";
 import "./index";
 

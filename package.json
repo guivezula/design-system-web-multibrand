@@ -3,12 +3,22 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "main": "dist/ds-multibrand.es.js",
+  "module": "dist/ds-multibrand.es.js",
+  "unpkg": "dist/ds-multibrand.umd.js",
+  "files": [
+    "dist",
+    "tokens/dist",
+    "package.json"
+  ],
+  "types": "dist/types/index.d.ts",
   "scripts": {
     "dev": "vite",
     "storybook": "storybook dev -p 6006",
     "build:tokens": "node tokens/builds/index.js",
-    "test": "vitest"
-    },
+    "test": "vitest",
+    "build": "vite build"
+  },
   "dependencies": {
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
@@ -21,16 +31,25 @@
     "@storybook/addon-docs": "^10.1.11",
     "@storybook/addon-vitest": "^10.1.11",
     "@storybook/web-components-vite": "^10.1.11",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
     "@vitest/browser-playwright": "^4.0.16",
     "@vitest/coverage-v8": "^4.0.16",
     "jsdom": "^27.4.0",
     "playwright": "^1.57.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
     "sass": "^1.77.8",
     "sass-loader": "^13.2.2",
     "storybook": "^10.1.11",
     "style-dictionary": "^3.8.0",
     "typescript": "~5.9.3",
     "vite": "^7.2.4",
+    "vite-plugin-dts": "^3.7.3",
+    "vite-plugin-svgstring": "^1.0.0",
     "vitest": "^4.0.16"
+  },
+  "engines": {
+    "node": "^20"
   }
 }

@@ -1,13 +1,11 @@
+import { Constructor } from "@utils/constructor";
 import { html, type LitElement } from "lit";
 import { property } from "lit/decorators.js";
 import { ifDefined } from "lit/directives/if-defined.js";
-import type { Constructor } from "../../utils/constructor";
 import { BaseInput } from "../base-input/base-input";
 import type { BaseInputTextProps } from "./base-input-text.types";
 
-export const BaseInputText = <T extends Constructor<LitElement>>(
-  superClass: T
-) => {
+export const BaseInputText = <T extends Constructor<LitElement>>(superClass: T) => {
   class BaseInputTextTemplate extends BaseInput(superClass) {
     @property({ type: Boolean }) override disabled: boolean = false;
     @property({ type: String }) override id: string = "";

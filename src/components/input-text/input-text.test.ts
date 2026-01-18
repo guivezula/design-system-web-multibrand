@@ -3,7 +3,7 @@ import { describe, it } from "vitest";
 
 import "./index";
 
-import getElmByTestId from "../../utils/test/get-by-testid";
+import getElmByTestId from "@utils/test/get-by-testid";
 import InputText from "./input-text";
 
 const InputTextDataId = {
@@ -29,7 +29,7 @@ describe("InputText", () => {
 
   it("should render the label", async () => {
     const el = await fixture<InputText>(
-      html`<ds-input-text id="text" label="Input Label"></ds-input-text>`
+      html`<ds-input-text id="text" label="Input Label"></ds-input-text>`,
     );
 
     await el.updateComplete;
@@ -42,7 +42,10 @@ describe("InputText", () => {
 
   it("should render the support text", async () => {
     const el = await fixture<InputText>(
-      html`<ds-input-text id="text" supportText="Support Text"></ds-input-text>`
+      html`<ds-input-text
+        id="text"
+        supportText="Support Text"
+      ></ds-input-text>`,
     );
 
     await el.updateComplete;
@@ -55,7 +58,7 @@ describe("InputText", () => {
 
   it("should render the placeholder", async () => {
     const el = await fixture<InputText>(
-      html`<ds-input-text id="text" placeholder="Placeholder"></ds-input-text>`
+      html`<ds-input-text id="text" placeholder="Placeholder"></ds-input-text>`,
     );
 
     await el.updateComplete;
@@ -68,7 +71,7 @@ describe("InputText", () => {
 
   it("should disable the input", async () => {
     const el = await fixture<InputText>(
-      html`<ds-input-text id="text" .disabled=${true}></ds-input-text>`
+      html`<ds-input-text id="text" .disabled=${true}></ds-input-text>`,
     );
 
     await el.updateComplete;
@@ -81,7 +84,7 @@ describe("InputText", () => {
 
   it("should set error state", async () => {
     const el = await fixture<InputText>(
-      html`<ds-input-text id="text" .error=${true}></ds-input-text>`
+      html`<ds-input-text id="text" .error=${true}></ds-input-text>`,
     );
 
     await el.updateComplete;
@@ -94,7 +97,7 @@ describe("InputText", () => {
 
   it("should set the value", async () => {
     const el = await fixture<InputText>(
-      html`<ds-input-text id="text" .value=${"Input Value"}></ds-input-text>`
+      html`<ds-input-text id="text" .value=${"Input Value"}></ds-input-text>`,
     );
 
     await el.updateComplete;
@@ -107,7 +110,7 @@ describe("InputText", () => {
 
   it("should dispatch focus on input", async () => {
     const el = await fixture<InputText>(
-      html`<ds-input-text id="text"></ds-input-text>`
+      html`<ds-input-text id="text"></ds-input-text>`,
     );
 
     await el.updateComplete;
@@ -121,7 +124,7 @@ describe("InputText", () => {
 
   it("should dispatch blur on input", async () => {
     const el = await fixture<InputText>(
-      html`<ds-input-text id="text"></ds-input-text>`
+      html`<ds-input-text id="text"></ds-input-text>`,
     );
 
     await el.updateComplete;
@@ -135,7 +138,7 @@ describe("InputText", () => {
 
   it("should dispatch change on input", async () => {
     const el = await fixture<InputText>(
-      html`<ds-input-text id="text"></ds-input-text>`
+      html`<ds-input-text id="text"></ds-input-text>`,
     );
 
     await el.updateComplete;
@@ -151,7 +154,7 @@ describe("InputText", () => {
 
   it("should dispatch input on input", async () => {
     const el = await fixture<InputText>(
-      html`<ds-input-text id="text"></ds-input-text>`
+      html`<ds-input-text id="text"></ds-input-text>`,
     );
 
     await el.updateComplete;
@@ -172,7 +175,7 @@ describe("InputText", () => {
         placeholder="Placeholder"
         supportText="Support Text"
         id="text-id"
-      ></ds-input-text>`
+      ></ds-input-text>`,
     );
 
     await el.updateComplete;

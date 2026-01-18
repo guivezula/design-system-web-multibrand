@@ -1,2 +1,3 @@
 export { default as InputText } from "./input-text";
-export type { InputTextProps, InputTextVariants } from "./input-text.types";
+export { InputTextMixin, type InputTextProps } from "./input-text.types";
+

@@ -1,18 +1,21 @@
-import { html, LitElement, unsafeCSS } from "lit";
+import { html, unsafeCSS } from "lit";
 import { customElement, property } from "lit/decorators.js";
 
-import { BaseButton } from "../../mixins";
-import { cn } from "../../utils/class-names";
 import style from "./button.scss?inline";
-import type { ButtonProps, ButtonVariants } from "./button.types";
+import {
+  ButtonMixin,
+  type ButtonProps,
+  type ButtonVariants,
+} from "./button.types";
 import { buttonVariants } from "./button.variants";
 
-import "./../loading";
+import "@components/loading";
+import { cn } from "@utils/class-names";
 
 const COMPONENT_NAME = "ds-button";
 
 @customElement(COMPONENT_NAME)
-export default class Button extends BaseButton(LitElement) {
+export default class Button extends ButtonMixin {
   @property({ type: Boolean }) override disabled: boolean = false;
   @property({ type: Boolean }) override loading: boolean = false;
   @property({ type: String }) size: ButtonVariants["size"] = "lg";
@@ -37,7 +40,7 @@ export default class Button extends BaseButton(LitElement) {
         size: this.size,
         variant: this.variant,
         loading: this.loading,
-      })
+      }),
     );
   }
 
@@ -47,14 +50,13 @@ export default class Button extends BaseButton(LitElement) {
 }
 
 declare global {
-  const DS_BUTTON = "ds-button";
   interface HTMLElementTagNameMap {
-    [DS_BUTTON]: Button;
+    "ds-button": Button;
   }
 
   namespace React.JSX {
     interface IntrinsicElements {
-      [DS_BUTTON]: React.DetailedHTMLProps<
+      "ds-button": React.DetailedHTMLProps<
         React.HTMLAttributes<HTMLDivElement>,
         HTMLDivElement
       > &

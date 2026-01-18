@@ -1,17 +1,15 @@
+import { bubbleEvent } from "@utils/bubble-event";
+import { Constructor } from "@utils/constructor";
 import { type LitElement } from "lit";
 import { property, state } from "lit/decorators.js";
-import { bubbleEvent } from "../../utils/bubble-event";
-import type { Constructor } from "../../utils/constructor";
 import { BaseComponent } from "../base-component";
 import type { BaseInputProps } from "./base-input.types";
 
-export const BaseInput = <T extends Constructor<LitElement>>(
-  superClass: T
-) => {
+export const BaseInput = <T extends Constructor<LitElement>>(superClass: T) => {
   class BaseInputTemplate extends BaseComponent(superClass) {
     @property({ type: Boolean }) disabled: boolean = false;
-    @property({ type: String}) id: string = "";
-    @property({ type: String}) value: string = "";
+    @property({ type: String }) id: string = "";
+    @property({ type: String }) value: string = "";
 
     @state() protected isFocused: boolean = false;
 
@@ -72,7 +70,6 @@ export const BaseInput = <T extends Constructor<LitElement>>(
         }),
       );
     }
-
   }
 
   return BaseInputTemplate as unknown as Constructor<BaseInputProps> & T;

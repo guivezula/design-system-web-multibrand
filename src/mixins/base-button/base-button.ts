@@ -1,14 +1,12 @@
+import { bubbleEvent } from "@utils/bubble-event";
+import { Constructor } from "@utils/constructor";
 import { html, type LitElement } from "lit";
 import { property } from "lit/decorators.js";
 import { ifDefined } from "lit/directives/if-defined.js";
-import { bubbleEvent } from "../../utils/bubble-event";
-import type { Constructor } from "../../utils/constructor";
 import { BaseSlot } from "../base-slot";
 import type { BaseButtonProps } from "./base-button.types";
 
-export const BaseButton = <T extends Constructor<LitElement>>(
-  superClass: T
-) => {
+export const BaseButton = <T extends Constructor<LitElement>>(superClass: T) => {
   class BaseButtonTemplate extends BaseSlot(superClass) {
     @property({ type: Boolean }) disabled: boolean = false;
     @property({ type: Boolean }) loading: boolean = false;
@@ -31,7 +29,7 @@ export const BaseButton = <T extends Constructor<LitElement>>(
           bubbles: true,
           composed: true,
           cancelable: true,
-        })
+        }),
       );
     }
 
